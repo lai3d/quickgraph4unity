@@ -40,7 +40,7 @@ namespace UnityTest
 		{
 			if (!string.IsNullOrEmpty (createdInFilePath))
 			{
-				return Resources.LoadAssetAtPath (createdInFilePath, typeof (UnityEngine.Object));
+				return UnityEditor.AssetDatabase.LoadAssetAtPath (createdInFilePath, typeof (UnityEngine.Object));
 			}
 			return this;
 		}

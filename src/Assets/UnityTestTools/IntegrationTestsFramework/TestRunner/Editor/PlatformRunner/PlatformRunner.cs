@@ -125,9 +125,9 @@ namespace UnityTest.IntegrationTests
 			{
 				case BuildTargetGroup.Android:
 					return BuildTarget.Android;
-				case BuildTargetGroup.WebPlayer:
-					return BuildTarget.WebPlayer;
-				case BuildTargetGroup.Standalone:
+            case BuildTargetGroup.WebGL:
+                return BuildTarget.WebGL;
+            case BuildTargetGroup.Standalone:
 				default:
 				{
 					switch (Application.platform)
@@ -139,7 +139,7 @@ namespace UnityTest.IntegrationTests
 						case RuntimePlatform.LinuxPlayer:
 							return BuildTarget.StandaloneLinux;
 					}
-					return BuildTarget.WebPlayer;
+					return BuildTarget.WebGL;
 				}
 			}
 		}

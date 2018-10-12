@@ -9,3 +9,6 @@ src/Assembly-UnityScript-Editor.unityproj
 src/src-csharp.sln
 src/src.sln
 src.userprefs
+src/.vs/
+src/src.Editor.csproj
+src/src.csproj
